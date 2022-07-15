@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: #293462;
+    margin: 0;
+}
+
+.header{
+    height: 20vh;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D61C4E;
+    box-shadow: rgba(151, 35, 35, 0.45) 0px 25px 20px -20px;
+}
+
+.header .logo{
+    background-color: white;
+    color: #D61C4E;
+    height: 75px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.add-book-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.add-book-button button{
+    background-color: #FEB139;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: #D61C4E;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.add-book-button button:hover{
+    cursor: pointer;
+    background-color: #dd9218;
+}
+
+.title h2{
+    margin: 0;
+    color: #D61C4E;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.books-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 60%;
+    border: 1px solid white;
+    align-content: center;
+    background-color: #FFF80A;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    gap: 10px;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #D61C4E;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    color: white;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.read, .remove{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.readButton{
+    font-size: 1.3rem;
+    width: 70%;
+    border: 0;
+    background-color: #FFF80A;
+    height: 40px;
+    color: #D61C4E;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.readButton:hover{
+    background-color: #dfd81d;
+    cursor: pointer;
+}
+
+.removeButton{
+    background-color: white;
+    color: red;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.removeButton:hover{
+    background-color: rgb(211, 204, 204);
+    cursor: pointer;
+}
+
+.notRead{
+    background-color: #FEB139;
+    font-size: 1.3rem;
+    width: 70%;
+    border: 0;
+    height: 40px;
+    color: #D61C4E;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.notRead:hover{
+    background-color: #d69020;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    color: white;
+    z-index: 0;
+    background-color: rgba(143, 138, 138, 0.3);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal h3{
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+    top: -30px;
+}
+
+.modal-content{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    width: 35%;
+    background-color: #293462;
+    gap: 10px;
+
+}
+
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    top: -32px;
+    margin: 0;
+}
+
+.close img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-item > input[type=text], .form-item > input[type=number]{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: 0;
+    border-radius: 10px;
+    border: 0;
+}
+
+.form-item > input[type=text]:focus{
+    border: 3px solid #D61C4E;
+}
+
+.form-item > .submit{
+    background-color: #fe8139;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.form-item > .submit:hover{
+    background-color: #f87021;
+    cursor: pointer;
+}
+
+
+
+
+
