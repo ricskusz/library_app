@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close">
+                <img src="window-close.png" alt="close" id="close">
+            </div>
+            <h3>Add new book</h3>
+            <form action="" id="bookForm">
+                <div class="form-item">
+                    <input type="text" id="title" placeholder="Title" required>
+                </div>
+               <div class="form-item">
+                    <input type="text" id="author" placeholder="Author" required>
+               </div>
+               <div class="form-item">
+                    <input type="number" id="pageNumber" placeholder="Page Number" min="0" max="2000" required>
+               </div>
+               <div class="form-item">
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" id="read">
+               </div>
+               <div class="form-item">
+                    <button class="submit" type="button">Submit</button>
+               </div>
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <div class="logo">Library</div>
+    </div>
+    <div class="container">
+        <div class="add-book-button">
+            <button id="addNewBook">+ Add book</button>
+        </div>
+        <div class="title"><h2>Your books</h2></div>
+        <div class="books-container">
+        </div>
+    </div>
+</body>
+</html>
