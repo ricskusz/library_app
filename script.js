@@ -6,11 +6,13 @@ const closeIcon = document.querySelector('#close');
 
 let myLibrary = [];
 
-function Book(title, author, pageNumber, read){
-    this.title = title;
-    this.author = author;
-    this. pageNumber = pageNumber;
-    this.read = read;
+class Book {
+    constructor(title, author, pageNumber, read){
+        this.title = title;
+        this.author = author;
+        this. pageNumber = pageNumber;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(){
